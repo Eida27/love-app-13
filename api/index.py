@@ -25,7 +25,7 @@ class handler(BaseHTTPRequestHandler):
         try:
             # 3. Call OpenAI (The Magic)
             response = client.chat.completions.create(
-                model="gpt-3.5-turbo",
+                model="gpt-4o-mini",
                 messages=[
                     {"role": "system", "content": "You are a romantic poet. Write a short, passionate love letter (max 3 sentences) based on the user's memory."},
                     {"role": "user", "content": f"Memory: {memory}"}
@@ -45,4 +45,5 @@ class handler(BaseHTTPRequestHandler):
         self.send_header('Access-Control-Allow-Origin', '*')
         self.send_header('Access-Control-Allow-Methods', 'POST, OPTIONS')
         self.send_header('Access-Control-Allow-Headers', 'Content-Type')
+
         self.end_headers()
