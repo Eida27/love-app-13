@@ -1,0 +1,83 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 2.5rem;
+    border-radius: 20px;
+    width: 85%;
+    max-width: 400px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+h1 {
+    color: #d63384;
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+}
+
+p {
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    padding: 15px;
+    border: 2px solid #ffc2d1;
+    border-radius: 12px;
+    box-sizing: border-box;
+    font-family: inherit;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s;
+    resize: none;
+}
+
+textarea:focus {
+    border-color: #d63384;
+}
+
+button {
+    background-color: #d63384;
+    color: white;
+    border: none;
+    padding: 14px 28px;
+    border-radius: 50px;
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    width: 100%;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 15px rgba(214, 51, 132, 0.3);
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+button:disabled {
+    background-color: #ffc2d1;
+    cursor: not-allowed;
+}
+
+#output {
+    margin-top: 2rem;
+    font-style: italic;
+    color: #444;
+    min-height: 50px;
+    line-height: 1.6;
+    font-weight: 500;
+}
